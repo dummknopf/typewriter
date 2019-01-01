@@ -1,0 +1,9 @@
+
+	<div class="saved_search">
+		<h2>Added Scripts</h2>
+		<ul class="saved_items" *ngFor="let script of scripts">
+			<li><input type="text" [value]="script.sentence" placeholder="Upload Data..." readonly></li>
+			<li><input type="text" [value]="script.paragraph" placeholder="Upload Data..." readonly></li>
+			<li><div class="btn-li"><button class="mode" (click)="showScript(script.paragraph)">Show Script</button><button class="delete" (click)="deleteScript(script._id)">Delete Script</button></div></li>
+		</ul>
+	</div>

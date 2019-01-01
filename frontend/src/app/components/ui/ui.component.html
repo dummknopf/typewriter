@@ -1,0 +1,17 @@
+<div id="sidebar">
+	<h1>Theodore</h1>
+	<h2>Write a Text</h2>
+	<div class="input-name">
+		<div class="name">
+			<input type="text" [value]="enteredSentence" placeholder="Insert Sentence" (input)="updateSentence($event)">
+		</div>
+	</div>
+	<div class="input-field">
+		<div class="field">
+			<input type="text" [value]="enteredParagraph" placeholder="Generated Paragraph" (input)="updateParagraph($event)">
+		</div>
+	</div>
+	<br>
+	<button class="mode" (click)="addScript()">Send Text</button>
+	<br>
+	<app-message-list></app-message-list>

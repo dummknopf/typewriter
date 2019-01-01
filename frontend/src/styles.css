@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+html, body, div[app-cesium] {
+width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+}
+
+.mat-dialog-container {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.mat-dialog-container > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-dialog-content {
+    max-height: inherit !important;
+}
+
+.mat-dialog-actions {
+    display: block !important;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    padding: 12px 0 0 !important;
+
+    &:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+.my-centered-dialog {
+  max-width: 80vw;
+}
+  .mat-dialog-container {
+    max-width: none;
+  }
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+button
+{
+  color:white;
+  font-size: "Roboto Bold";
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  padding:0.7em;
+  border-radius: 4px;
+  cursor: pointer;
+  border:none;
+}
+
+.button
+{
+  color:white;
+  font-size: "Roboto Bold";
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  padding:0.7em;
+  border-radius: 4px;
+  cursor: pointer;
+  border:none;
+}
+
+.cesium-viewer-toolbar
+{
+  margin:0 385px 0 0;
+}
+

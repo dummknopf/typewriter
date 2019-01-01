@@ -1,0 +1,9 @@
+<h1>Theodore LSTM</h1>
+<div class="name">
+  <input type="text" [value]="enteredSentence" placeholder="Insert Sentence" (input)="updateSentence($event)">
+</div>
+<button id="generate" (click)="generate()">Generate text</button>
+<p id="status">{{showText}}</p>
+<br>
+<br>
+<app-message-list></app-message-list>
