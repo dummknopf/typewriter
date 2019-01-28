@@ -1,7 +1,7 @@
 h2
 {
   font-size: 20px;
-  color:#00796b;
+  color:#37474f;
   margin:0.6em 0 0.4em 0;
   font-weight:normal;
 }
@@ -10,14 +10,37 @@ h2
 input
 {
   width: 100%;
-  border: 2px solid #00796b;
+  border-bottom: 2px solid #37474f;
   padding:0.6em 0;
   margin:0;
-  border-radius: 4px;
   font-size:14px;
   color:#333;
   padding:0.5em 0 0.5em 0.5em;
+  border:none;
 }
+
+/*.content{
+  border:1px solid #37474f;
+  width:95%;
+  margin:auto;
+}*/
+
+.sentence
+{
+  font-family: serif;
+  font-size:18px;
+}
+
+.generated
+{
+  margin:0 0 0 20px;
+  font-family: serif;
+  font-size:18px;
+  width:50%;
+  height:20%;
+}
+
+
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #bbb;

@@ -94,6 +94,8 @@ export class UIP5Component implements OnInit, OnChanges {
 
   addScript(txt,gen){
     //console.log({message:'AddScript', text:txt, paragraph:gen});
+
+    txt = txt + "...";
     this.tilesService.addScript(txt, gen);
     this.enteredSentence = '';
   }
