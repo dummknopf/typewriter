@@ -23,7 +23,7 @@ export class UIP5Component implements OnInit, OnChanges {
 
   ngOnInit() {
 
-    this.charRNN = ml5.charRNN('/assets/models/woolf/', modelReady);
+    this.charRNN = ml5.charRNN('/assets/models/type/', modelReady);
 
     function modelReady() {
       return "Model Loaded";
@@ -47,7 +47,7 @@ export class UIP5Component implements OnInit, OnChanges {
           
         this.dataSentence = {
           seed: this.enteredSentence,
-          temperature: 1,
+          temperature: 0.9,
           length: 300
         }
         console.log(this.dataSentence);
