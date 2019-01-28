@@ -1,9 +1,10 @@
-<h1>Theodore LSTM</h1>
-<div class="name">
-  <input type="text" [value]="enteredSentence" placeholder="Insert Sentence" (input)="updateSentence($event)">
+<div id="body">
+  <h1>Typewriter Installation</h1>
+  <div class="name">
+    <input type="text" [value]="enteredSentence" placeholder="Insert Sentence" (input)="updateSentence($event)">
+    <button id="generate" (click)="generate()">Generate text</button>
+  </div>
+  <br>
+  <br>
+  <app-message-list></app-message-list>
 </div>
-<button id="generate" (click)="generate()">Generate text</button>
-<p id="status">{{showText}}</p>
-<br>
-<br>
-<app-message-list></app-message-list>

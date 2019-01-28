@@ -13,6 +13,7 @@ import { Script} from "../../script.model";
 export class MessageListComponent implements OnInit, OnDestroy {
 
 	scripts: Script[] = [];
+	par: string;
   	private messSub: Subscription;
   @Output() addScript = new EventEmitter();
 
@@ -24,7 +25,16 @@ export class MessageListComponent implements OnInit, OnDestroy {
 	    this.messageService.getScripts();
 	    this.messSub = this.messageService.getScriptUpdateListener()
 	      .subscribe((scripts: Script[]) => {
-					this.scripts = scripts;
+					//var par = scripts.paragraph.text().replace(/\.\s/g, '.<br>');
+					//this.scripts = {"sentence": this.scripts.sentence, "paragraph": par};
+					var par = [];
+					for(var i = 0; i < scripts.length; i++)
+					{
+						console.log(scripts[i].paragraph);
+						par[i] = scripts[i].paragraph.replace(/\.\s/g, '.<br>');
+						console.log(par[i]);
+					}
+						this.scripts = scripts;
 				});
   	} 
 
